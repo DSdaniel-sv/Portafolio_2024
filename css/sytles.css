@@ -1,0 +1,124 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* html */
+html{
+    scroll-behavior: smooth;
+    background-color: #ececec;
+    margin: auto;
+}
+/* body */
+body{
+}
+
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 0px 10px 1px black;
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+}
+.logo{
+    margin-left: 2rem;
+}
+.logo img{
+    width: 10rem;
+    height: 2rem;
+}
+
+.nav{
+}
+.nav-list{
+    display: flex;
+    gap: 20px;
+    margin-right: 4rem;
+}
+#home{
+    color: red;
+}
+.nav-list li a{
+    color: black;
+    font-weight: 800;
+}
+.dark-theme-btn{
+    background-color: rgba(255, 0, 0, 0.014);
+    border: none;
+}
+/* button-ham */
+#btn-ham{
+    display: none;
+}
+
+/* wrapper */
+.wrapper{
+    box-shadow: 0px 0px 10px 1px black;
+/*     max-width: 1800px;
+    margin: auto; */
+}
+.sect{
+    padding-top: 5rem;
+    width: 100%;
+    height: 100vh;
+}
+
+/* footer */
+.footer{
+    box-shadow: 0px 0px 10px 1px black;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60px;
+    font-family: cursive;
+}
+
+
+
+/* dark-mode */
+.dark-mode{
+    .header{
+        box-shadow: 0px 0px 10px 5px rgb(224, 223, 223);
+        background-color: black;
+    }
+    .nav-list li a {
+        color: white;
+        text-shadow: 0 0px 10px red;
+    }
+    .nav-list li a:hover{
+        text-shadow: 0 0px 10px greenyellow;
+    }
+    .wrapper{
+        background-color: black;
+        color: white;
+    }
+    .footer{
+        box-shadow: 0px 0px 10px 5px rgb(224, 223, 223);
+        background-color: black;
+        color: white;
+    }
+    .hamburger .hamburger-inner,
+    .hamburger .hamburger-inner::before,
+    .hamburger .hamburger-inner::after{
+        background-color: white;
+        box-shadow: 0px 0px 10px 1px rgb(224, 223, 223);
+    }
+    #btn-ham.is-active .hamburger-inner,
+    #btn-ham.is-active .hamburger-inner::before,
+    #btn-ham.is-active .hamburger-inner::after{
+        background-color: white;
+        box-shadow: 0px 0px 10px 1px rgb(224, 223, 223);
+    }
+}
