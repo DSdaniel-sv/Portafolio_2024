@@ -2,7 +2,7 @@
 @media screen and (max-width:800px) {
     #btn-ham{
         display: block;
-        margin-right: 2rem;
+        margin-right: .5rem;
     }
     .nav{
         opacity: 0;
