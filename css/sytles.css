@@ -72,6 +72,37 @@ body{
     height: 100vh;
 }
 
+/* sec-1 */
+.box__main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.typing__demo{
+    width: 50%;
+    max-width: 1200px;
+    animation: typing 4s steps(22) infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 4em;
+    color: rgba(3, 1, 1, 0.758);
+    text-transform: uppercase;
+    filter: drop-shadow(15px 15px 2ewpx rgba(85, 80, 80, 0.758));
+    margin: 269px 0;
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
 /* footer */
 .footer{
     box-shadow: 0px 0px 10px 1px black;
@@ -121,5 +152,8 @@ body{
     #btn-ham.is-active .hamburger-inner::after{
         background-color: white;
         box-shadow: 0px 0px 10px 1px rgb(224, 223, 223);
+    }
+    .typing__demo{
+        color: white;
     }
 }
