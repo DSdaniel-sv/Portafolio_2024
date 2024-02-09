@@ -4,6 +4,9 @@
         display: block;
         margin-right: .5rem;
     }
+    .header{
+        z-index: 999;
+    }
     .nav{
         opacity: 0;
         visibility: hidden;
@@ -59,7 +62,11 @@
 
     /* sect-1 */
     .typing__demo{
-        width: 50%;
         font-size: 1rem;
+    }
+
+    /* container-about-me */
+    .about-me-2 img{
+        width: 17em;
     }
 }
