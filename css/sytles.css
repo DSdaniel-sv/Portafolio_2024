@@ -86,7 +86,7 @@ body {}
     justify-content: center;
     background: url(../src/background/fondo_5.jpg) no-repeat center center;
     background-size: cover;
-    height: 80vh;
+    height: 100vh;
 }
 
 .typing__demo {
