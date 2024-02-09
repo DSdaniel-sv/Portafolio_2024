@@ -79,7 +79,7 @@ body{
     justify-content: center;
 }
 .typing__demo{
-    width: 50%;
+    width: 80%;
     max-width: 1200px;
     animation: typing 4s steps(22) infinite alternate;
     white-space: nowrap;

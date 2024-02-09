@@ -59,6 +59,7 @@
 
     /* sect-1 */
     .typing__demo{
-        font-size: 2em;
+        width: 50%;
+        font-size: 1rem;
     }
 }
