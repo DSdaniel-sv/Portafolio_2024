@@ -73,8 +73,6 @@ body {}
 /* wrapper */
 .wrapper {
     box-shadow: 0px 0px 10px 1px black;
-    /*     max-width: 1800px;
-    margin: auto; */
 }
 
 .sect {
@@ -88,6 +86,7 @@ body {}
     justify-content: center;
     background: url(../src/background/fondo_5.jpg) no-repeat center center;
     background-size: cover;
+    height: 80vh;
 }
 
 .typing__demo {
