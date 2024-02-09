@@ -64,9 +64,12 @@
     .typing__demo{
         font-size: 1rem;
     }
-
     /* container-about-me */
     .about-me-2 img{
         width: 17em;
+    }
+    .light {
+        font-size: 2rem;
+        text-align: center;
     }
 }

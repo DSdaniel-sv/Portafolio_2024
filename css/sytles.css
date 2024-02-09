@@ -199,7 +199,7 @@ body {}
     border-end-start-radius: 25px;
     border-end-end-radius: 25px;
     gap: 1rem;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.233);
     backdrop-filter: blur(15px);
 }
 
@@ -225,6 +225,120 @@ body {}
     border-end-start-radius: 25px;
     border-end-end-radius: 25px;
 }
+
+/* skills */
+.box__circle{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 2rem;
+}
+.circle-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 160px);
+    grid-gap: 80px;
+    width: 150px;
+    height: 150px;
+    background: #d9d7da1a;
+    border-radius: 50%;
+  }
+  
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill-1,
+  .circle-wrap .circle .fill-2,
+  .circle-wrap .circle .fill-3 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+  }
+  
+  .circle-wrap .inside-circle {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background: #212020;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 13px;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+    /* color animation */
+    .mask .fill-1 {
+        clip: rect(0px, 75px, 150px, 0px);
+        background-color: #ec0c0c;
+      }
+      
+      .mask.full-1,
+      .circle .fill-1 {
+        animation: fill-1 ease-in-out 3s infinite alternate;
+        transform: rotate(155deg);
+      }
+      
+      @keyframes fill-1 {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(155deg);
+        }
+      }
+      
+      /* 2nd bar */
+      
+      .mask .fill-2 {
+        clip: rect(0px, 75px, 150px, 0px);
+        background-color: #00ffff;
+      }
+      
+      .mask.full-2,
+      .circle .fill-2 {
+        animation: fill-2 ease-in-out 3s infinite alternate;
+        transform: rotate(140deg);
+      }
+      
+      @keyframes fill-2{
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(140deg);
+        }
+      }
+      
+      /* 3rd progress bar */
+      .mask .fill-3 {
+        clip: rect(0px, 75px, 150px, 0px);
+        background-color: #ffff00;
+      }
+      
+      .mask.full-3,
+      .circle .fill-3 {
+        animation: fill-3 ease-in-out 3s infinite alternate;
+        transform: rotate(100deg);
+      }
+      
+      @keyframes fill-3{
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(100deg);
+        }
+      }
 
 /* footer */
 .footer {
@@ -285,5 +399,12 @@ body {}
 
     .typing__demo {
         color: white;
+    }
+    .light {
+        color: rgb(252, 240, 240);
+    }
+    
+    .light::before {
+        text-shadow: 0 0 10px rgb(255, 255, 255);
     }
 }
